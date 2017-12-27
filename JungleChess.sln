@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JungleChess", "JungleChess\JungleChess.csproj", "{E2DEE201-6A5C-46EE-BB89-8CCFC7833B21}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JungleChessTests", "JungleChessTests\JungleChessTests.csproj", "{1C48A516-43B3-42B8-860B-349F6459B0B0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -13,5 +15,9 @@ Global
 		{E2DEE201-6A5C-46EE-BB89-8CCFC7833B21}.Debug|x86.Build.0 = Debug|x86
 		{E2DEE201-6A5C-46EE-BB89-8CCFC7833B21}.Release|x86.ActiveCfg = Release|x86
 		{E2DEE201-6A5C-46EE-BB89-8CCFC7833B21}.Release|x86.Build.0 = Release|x86
+		{1C48A516-43B3-42B8-860B-349F6459B0B0}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{1C48A516-43B3-42B8-860B-349F6459B0B0}.Debug|x86.Build.0 = Debug|Any CPU
+		{1C48A516-43B3-42B8-860B-349F6459B0B0}.Release|x86.ActiveCfg = Release|Any CPU
+		{1C48A516-43B3-42B8-860B-349F6459B0B0}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

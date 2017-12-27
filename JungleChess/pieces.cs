@@ -3,9 +3,9 @@ using System.Collections.Generic;
 
 namespace JungleChess
 {
-	enum animal { rat, cat, dog, wolf, leopard, tiger, lion, elephant }
+	public enum animal { rat, cat, dog, wolf, leopard, tiger, lion, elephant }
 
-    abstract class Piece
+    public abstract class Piece
     {
         protected playerName owner;
         public playerName Owner { get; }

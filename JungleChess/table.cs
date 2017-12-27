@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 namespace JungleChess
 {
-    class Coordinate
+    public class Coordinate
     {
         public int row = 0, column = 0;
 
@@ -47,11 +47,9 @@ namespace JungleChess
         { return new Coordinate(c1.row + c2.row, c1.column + c2.column); }
 		public static Coordinate operator *(Coordinate c1, Coordinate c2)
 		{ return new Coordinate(c1.row * c2.row, c1.column * c2.column); }
-        public static Coordinate operator *(Coordinate c, int i)
-        { return new Coordinate(c.row * i, c.column * i); }
     }
 
-    enum playerName { white, black }
+    public enum playerName { white, black }
 
     class Square
     {
@@ -118,7 +116,7 @@ namespace JungleChess
     class WhitePlayer : Player {
         public WhitePlayer () 
         {
-            pieces.AddRange(Table.StartingWhitePieces());
+            pieces = Table.StartingWhitePieces();
             name = playerName.white;
         }
     }
@@ -126,12 +124,12 @@ namespace JungleChess
     class BlackPlayer : Player {
         public BlackPlayer()
         {
-            pieces.AddRange(Table.StartingBlackPieces());
+            pieces = Table.StartingBlackPieces();
             name = playerName.black;
         }
     }
 
-    class Table
+    public static class Table
     {
         static Square Sqr = new Square();
         static Water Wtr = new Water();

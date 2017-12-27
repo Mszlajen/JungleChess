@@ -29,9 +29,6 @@
     <PlatformTarget>x86</PlatformTarget>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="System" />
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="table.cs" />
@@ -39,4 +36,9 @@
     <Compile Include="pieces.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Reference Include="System">
+      <HintPath>..\..\..\..\..\..\usr\lib\mono\4.6.1\System.dll</HintPath>
+    </Reference>
+  </ItemGroup>
 </Project>
